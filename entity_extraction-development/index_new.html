@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<body style="background-color:powderblue;">
+
+
+</body>
+<head>
+	<title>Entity Recognition</title>
+	    <!-- Font Awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+<!-- Bootstrap core CSS -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet">
+<!-- Material Design Bootstrap -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.3/css/mdb.min.css" rel="stylesheet">
+
+			<h1 style="text-align:center;"><b>Custom NER of cities and towns</b> /h1>
+
+
+
+</head>
+<body>
+
+	<div>
+		<canvas id="text" width="500" height="100"></canvas>
+		<canvas id="stage" width="500" height="100"></canvas>
+		<form id="form" method="POST">
+		    <input name="text" type="text" id="inputText" size="50" value=>
+		    <input type="submit" value="Submit" />
+			<button type="reset">Clear</button>
+		</form>
+	</div>
+
+    <div class="flashes">
+	  {% for message in get_flashed_messages() %}
+	    {{ message }}
+	  {% endfor %}
+	</div>
+	</form>
+
+</body>
+</html>
