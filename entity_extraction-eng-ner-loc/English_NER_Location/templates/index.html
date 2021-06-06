@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<body style="background-color:grey;">
+
+
+</body>
+<head>
+	<title>Entity Recognition</title>
+	    <!-- Font Awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+<!-- Bootstrap core CSS -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet">
+<!-- Material Design Bootstrap -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.3/css/mdb.min.css" rel="stylesheet">
+
+			<p style="font-size:50px;"><h1 style="text-align:center;"><b>Spacy Trained Named Entity Recognition - Indian Cities and Towns </b> </h1></p>
+
+
+
+
+</head>
+<body>
+
+	<div style="text-align:center;">
+		<canvas id="text" width="500" height="100"></canvas>
+		<canvas id="stage" width="500" height="100"></canvas>
+		<form id="form" method="POST">
+		    <input name="text" type="text" id="inputText" size="100" value=>
+		    <input type="submit" value="Submit" />
+			<button type="reset">Clear</button>
+		</form>
+	</div>
+
+    <div class="flashes" style="text-align:center">
+	  {% for message in get_flashed_messages() %}
+	    {{ message }}
+	  {% endfor %}
+	</div>
+	</form>
+
+</body>
+</html>

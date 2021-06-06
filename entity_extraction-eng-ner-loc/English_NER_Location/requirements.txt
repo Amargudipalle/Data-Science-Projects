@@ -1,0 +1,4 @@
+spacy - 2.2.2 version
+flask
+collections
+pathlib
