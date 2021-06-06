@@ -1,0 +1,44 @@
+version: "2.0"
+
+intents:
+- greet
+- goodbye
+- order
+- choosing_item
+- order_enquiry
+- complain
+- suggest
+
+slots:
+  group:
+    type: text
+
+entities:
+- group
+
+
+responses:
+  utter_greet:
+  - text: "Hey! Welcome to Amar's Biryani . How may I help you ?"
+
+  utter_menu:
+  - text: "Yes, we are open 24 X 7. Here's our menu. 1.Dum Biriyani  2. Hyderabad Biryani 3. Dindigul biryani  4. Ambur biryani  5. Thalassery biryani  6. Malabar biryani  7. Garlic breadsticks  8. coke (500 ml). Enter  1 if you want popcorn, 5 for Pizza and so on"
+
+  utter_order_received:
+  - text: "Great choice ! Your order has been confirmed . Wait while our top chefs prepare your delicious food !"
+
+  utter_goodbye:
+  - text: " Thankyou for choosing us. Waiting for your next visit "
+
+  utter_enquiry:
+  - text: " Your food is being prepared. It usually takes 25-30 minutes "
+
+  utter_receive_complaint:
+  - text: " Sorry that you faced trouble. We have noted your issues and it shall not be repeated again"
+
+  utter_take_suggestion:
+  - text: " Sure , we shall take into account . Thanks for suggestion "
+
+  utter_iamabot:
+  - text: "I am a bot"
+ 
